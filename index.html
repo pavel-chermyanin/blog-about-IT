@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">
+            <a class="logo">
                 <img src="img/logo.svg" alt="Логотип Блога">
             </a>
             <div class="header__right">
@@ -34,29 +34,30 @@
         <section class="content">
             <h2 class="visually-hidden">Статьи нашего блога</h2>
             <div class="container">
-                <div class="articles">
-                    <article class="blog-article">
-                        <a href="#" class="blog-article__category">Категория 1</a>
-                        <h3 class="blog-article__title">
+                <div class="posts">
+                    <article class="blog-posts">
+                        <a href="#" class="blog-posts__category">Категория 1</a>
+                        <h3 class="blog-posts__title blog-title">
                             Не платите и цента за эту книгу, пока она не удвоит вашу обучаемость!
                         </h3>
-                        <p class="blog-article__decr">
+                        <p class="blog-posts__decr">
                             Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по
                             ИТ-мощностям в крупной компании
                             периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив
                             проверить, нужен ли он
                             вообще.
                         </p>
-                        <time class="blog-article__date">13 дек 2020</time>
+                        <time class="blog-posts__date">13 дек 2020</time>
                     </article>
-                    <ul class="article-grid">
-                        <li class="article-grid__item">
-                            <article class="blog-article">
-                                <a href="#" class="blog-article__category">Категория 1</a>
-                                <h3 class="blog-article__title">
-                                    76 причин, по которым мы бы вам заплатили, ответь вы на наше объявление пару месяцев назад
+                    <ul class="post-grid">
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    76 причин, по которым мы бы вам заплатили, ответь вы на наше объявление пару месяцев
+                                    назад
                                 </h3>
-                                <p class="blog-article__decr">
+                                <p class="blog-posts__decr">
                                     Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по
                                     ИТ-мощностям в крупной компании
                                     периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
@@ -64,51 +65,193 @@
                                     он
                                     вообще.
                                 </p>
-                                <time class="blog-article__date">13 дек 2020</time>
+                                <time class="blog-posts__date">13 дек 2020</time>
                             </article>
                         </li>
-                        <li class="article-grid__item">
-                            <article class="blog-article">
-                                <a href="#" class="blog-article__category">Категория 1</a>
-                                <h3 class="blog-article__title">
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
                                     Они «прошли по вашим головам» и получают повышение?
                                 </h3>
-                                <time class="blog-article__date">13 дек 2020</time>
+                                <time class="blog-posts__date">13 дек 2020</time>
                             </article>
                         </li>
-                        <li class="article-grid__item">
-                            <article class="blog-article" style="background-image: url('');">
-                                <a href="#" class="blog-article__category">Категория 1</a>
-                                <h3 class="blog-article__title">
+                        <li class="post-grid__item">
+                            <article class="blog-posts" style="background-image: url('');">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
                                     Что должен знать каждый о заработке на бирже
                                 </h3>
-                                <time class="blog-article__date">13 дек 2020</time>
+                                <time class="blog-posts__date">13 дек 2020</time>
                             </article>
                         </li>
-                        <li class="article-grid__item">
-                            <article class="blog-article">
-                                <a href="#" class="blog-article__category">Категория 1</a>
-                                <h3 class="blog-article__title">
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
                                     ITAM&SAMDay – самая настоящая удача!
                                 </h3>
-                                <time class="blog-article__date">13 дек 2020</time>
+                                <time class="blog-posts__date">13 дек 2020</time>
                             </article>
                         </li>
-                        <li class="article-grid__item">
-                            <article class="blog-article">
-                                <a href="#" class="blog-article__category">Категория 1</a>
-                                <h3 class="blog-article__title">
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
                                     ITAM&SAMDay – самая настоящая удача!
                                 </h3>
-                                <time class="blog-article__date">13 дек 2020</time>
+                                <time class="blog-posts__date">13 дек 2020</time>
                             </article>
                         </li>
                     </ul>
+                    <ul class="post-grid">
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    76 причин, по которым мы бы вам заплатили, ответь вы на наше объявление пару месяцев
+                                    назад
+                                </h3>
+                                <p class="blog-posts__decr">
+                                    Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по
+                                    ИТ-мощностям в крупной компании
+                                    периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                                    отчёт, решив проверить, нужен ли
+                                    он
+                                    вообще.
+                                </p>
+                                <time class="blog-posts__date">13 дек 2020</time>
+                            </article>
+                        </li>
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    Они «прошли по вашим головам» и получают повышение?
+                                </h3>
+                                <time class="blog-posts__date">13 дек 2020</time>
+                            </article>
+                        </li>
+                        <li class="post-grid__item">
+                            <article class="blog-posts" style="background-image: url('');">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    Что должен знать каждый о заработке на бирже
+                                </h3>
+                                <time class="blog-posts__date">13 дек 2020</time>
+                            </article>
+                        </li>
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    ITAM&SAMDay – самая настоящая удача!
+                                </h3>
+                                <time class="blog-posts__date">13 дек 2020</time>
+                            </article>
+                        </li>
+                        <li class="post-grid__item">
+                            <article class="blog-posts">
+                                <a href="#" class="blog-posts__category">Категория 1</a>
+                                <h3 class="blog-posts__title blog-title">
+                                    ITAM&SAMDay – самая настоящая удача!
+                                </h3>
+                                <time class="blog-posts__date">13 дек 2020</time>
+                            </article>
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--current">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                    </ul>
                 </div>
+                <aside class="sidebar">
+                    <div class="popular-posts">
+                        <h3 class="popular-posts__title blog-title">Популярные новости</h3>
+                        <ul class="popular-posts__list">
+                            <li class="popular-posts__item">
+                                <article class="blog-posts popular-posts__article">
+                                    <h3 class="blog-posts__title blog-title">
+                                        “Дорогой, они повысили тебе зарплату в три раза”
+                                    </h3>
+                                    <time class="blog-posts__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                            <li class="popular-posts__item">
+                                <article class="blog-posts popular-posts__article">
+                                    <a href="#" class="blog-posts__category">Категория 1</a>
+                                    <h3 class="blog-posts__title blog-title">
+                                        Новинка! Ваша инструкция по выживанию в 2022 году
+                                    </h3>
+                                    <p class="blog-posts__decr">
+                                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по
+                                        ИТ-мощностям в крупной компании
+                                        периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                                        отчёт, решив
+                                        проверить, нужен ли он
+                                        вообще.
+                                    </p>
+                                    <time class="blog-posts__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                            <li class="popular-posts__item popular-posts__article">
+                                <article class="blog-posts">
+                                    <a href="#" class="blog-posts__category">Категория 1</a>
+                                    <h3 class="blog-posts__title blog-title">
+                                        Хорошие новости о приближающихся плохих временах!
+                                    </h3>
+                                    <p class="blog-posts__decr">
+                                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по
+                                        ИТ-мощностям в крупной компании
+                                        периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                                        отчёт, решив
+                                        проверить, нужен ли он
+                                        вообще.
+                                    </p>
+                                    <time class="blog-posts__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <h3 class="subscribe__title blog-title">Подписка на рассылку</h3>
+                        <form action="#" class="subscribe__form sub-form">
+                            <input type="email" class="sub-form__input" placeholder="Email@gmail.com">
+                            <button class="sub-form__btn">
+                                Подписаться
+                                <svg></svg>
+                            </button>
+                        </form>
+                    </div>
+                </aside>
             </div>
         </section>
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <a class="logo">
+                    <img src="img/logo.svg" alt="Логотип Блога">
+                </a>
+                <nav class="nav footer__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link nav__link--current">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Поиск</a></li>
+                    </ul>
+                </nav>
+                <small class="footer__copy">ООО “Организация” 2020. Все права защищены</small>
+            </div>
         </footer>
     </main>
 

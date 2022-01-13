@@ -21,3 +21,15 @@ img{
     cursor: pointer;
     padding: 0;
 }
+body{
+    overflow-anchor: none;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    /* color: var(--color-dark);
+    background-color: var(--color-white); */
+}
+.blog-title{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}

@@ -132,6 +132,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+/* ============= content ================ */
+
 .content{
   padding-top: var(--grid-gap);
 }
@@ -174,7 +177,10 @@ body {
   line-height: 21px;
 }
 .blog-post__title{
-  margin: 0 0 20px;
+  margin-bottom: 20px;
+}
+.blog-title{
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
   font-weight: 500;
@@ -195,12 +201,15 @@ body {
   margin: 0;
   padding-right: var(--grid-gap);
 }
+
+/* ================ post-grid ======================= */
+
 .post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr );
   grid-template-rows: repeat(8, 180px);
   grid-gap: var(--grid-gap);
-
+  margin-bottom: 90px;
 }
 .post-grid__item:nth-child(5n+1){
   grid-column: 2 span;
@@ -242,6 +251,8 @@ body {
   left: 30px;
   color: #fff;
 }
+
+
 .post-grid__item:nth-child(5n+3) .blog-post{
   background-color: var(--accent-color);
   padding-left: 30px;
@@ -295,3 +306,121 @@ body {
   top: 30px;
 }
 
+
+/* ============ pagination =================== */
+
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__item:not(:last-child){
+  margin-right: 20px;
+}
+.pagination__link{
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+}
+.pagination__link--current{
+  color: var(--accent-color);
+}
+.pagination__link--current::after{
+  color: var(--accent-color);
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+/* ============ sidebar =================== */
+
+.popular-posts{
+  margin-bottom: var(--grid-gap);
+}
+.popular-posts__title{
+  margin-bottom: 30px;
+}
+.popular-posts__article{
+  padding: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #E5E4E4;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.popular-posts__item:last-child .popular-posts__article{
+  border-bottom: 1px solid transparent;
+}
+.popular-posts__article .blog-post__title{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.popular-posts__article .blog-post__decr{
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+.popular-posts__article .blog-post__date{
+  display: block;
+  position: static;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: #E5E4E4;
+  margin-bottom: 10px;
+}
+
+/* ============= subscribe =============== */
+
+.subscribe{
+  background-color: #fff;
+  padding: 40px 30px 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+.subscribe__title{
+  margin-bottom: 30px;  
+}
+.sub-form__input{
+  width: 100%;
+  display: block;
+  font-family: "Futura PT", serif;
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 13px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.sub-form__input::placeholder{
+  font-family: "Futura PT", serif;
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: #E5E4E4;;
+}
+.sub-form__btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura PT", serif;
+  padding: 13px 30px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.sub-form__btn span{
+  margin-right: 10px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Пост | Блог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo header__logo">
+                <img src="img/logo.svg" alt="Логотип Блога">
+            </a>
+            <div class="header__right">
+                <nav class="nav header__nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item"><a href="index.html" class="nav__link nav__link--current">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Поиск</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+798788787" class="phone">+7 (987) 887-87</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="post-banner">
+            <div class="container post-banner__container" style="background-image: url(./img/post-banner.jpg);"></div>
+        </div>
+        <section class="post-content">
+            <div class="container post-content__container">
+                <div class="post-wrapper">
+                    <div class="post">
+                        <div class="post-meta">
+                            <a class="post-category" href="#">
+                                Важные новости
+                            </a>
+                            <time class="post-date">13 дек 2020</time>
+                        </div>
+                        <h1 class="blog-title post-title">
+                            Meta разрабатывает мощный суперкомпьютер на основе искусственного интеллекта
+                        </h1>
+                        <p>
+                            «RSC призван помочь исследователям искусственного интеллекта Meta создавать новые, более
+                            совершенные модели
+                            искусственного интеллекта, которые смогут учиться на триллионах примеров, работать на сотнях
+                            разных языков, легко
+                            анализировать текст, изображения и видео, разрабатывать новые инструменты дополненной
+                            реальности», - сообщила
+                            пресс-служба компании.
+                        </p>
+                        <p>
+                            Специалисты смогут обучать крупные модели в области компьютерного зрения, НЛП, распознавания
+                            речи.
+                        </p>
+                        <p>
+                            RSC включает в себя 760 систем NVIDIA DGX A100 в качестве вычислительных узлов, 6080
+                            графических процессоров, причем
+                            каждый графический процессор A100 является более мощным, чем V100, используемый в предыдущей
+                            системе. Каждый DGX
+                            взаимодействует через двухуровневую сеть Clos NVIDIA Quantum 1600 Гбит/с InfiniBand. Уровень
+                            хранения RSC имеет 175
+                            петабайт Flash, 46 петабайт кеш-памяти в системах Penguin Computing Altus и 10 петабайт
+                            FlashBlade.
+                        </p>
+                        <p>
+                            RSC выполняет рабочие процессы компьютерного зрения в 20 раз быстрее, запускает библиотеку
+                            коллективной связи NVIDIA
+                            (NCCL) в 9 раз быстрее и обучает крупномасштабные модели NLP в 3 раза быстрее. Это означает,
+                            что модель с десятками
+                            миллиардов параметров может завершить обучение за три недели.
+                        </p>
+                        <img src="./img/post-img.webp" alt="Post image">
+                    </div>
+                    <div class="post-links">
+                        <a class="post-link post-link--prev" href="#">
+                            Предыдущая новость
+                        </a>
+                        <a class="post-link post-link--next" href="#">
+                            Следующая новость
+                        </a>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h3 class="popular-post__title blog-title">Популярные новости</h3>
+                        <ul class="popular-posts__list list-reset">
+                            <li class="popular-post__item">
+                                <article class="blog-post popular-post__article">
+                                    <h3 class="blog-post__title blog-title">
+                                        <a href="#" class="blog-post__link">
+                                            “Дорогой, они повысили тебе зарплату в три раза”
+                                        </a>
+                                    </h3>
+                                    <time class="blog-post__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                            <li class="popular-post__item">
+                                <article class="blog-post popular-post__article">
+                                    <h3 class="blog-post__title blog-title">
+                                        <a href="#" class="blog-post__link">
+                                            Новинка! Ваша инструкция по выживанию в 2022 году
+                                        </a>
+                                    </h3>
+                                    <time class="blog-post__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                            <li class="popular-post__item">
+                                <article class="blog-post popular-post__article">
+                                    <h3 class="blog-post__title blog-title">
+                                        <a href="#" class="blog-post__link">
+                                            Хорошие новости о приближающихся плохих временах!
+                                        </a>
+                                    </h3>
+                                    <time class="blog-post__date">13 дек 2020</time>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <h3 class="subscribe__title blog-title">Подписка на рассылку</h3>
+                        <form action="#" class="subscribe__form sub-form">
+                            <input type="email" class="sub-form__input" placeholder="Введите email">
+                            <button class="sub-form__btn btn-reset">
+                                <span>Подписаться</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path
+                                            d="M19.5857 9.85046L1.01474 1.27924C0.719033 1.14496 0.366184 1.22496 0.160475 1.47924C-0.046663 1.73352 -0.0538057 2.09494 0.143332 2.35636L6.25033 10.499L0.143332 18.6417C-0.0538057 18.9031 -0.046663 19.2659 0.159046 19.5188C0.297614 19.6917 0.504752 19.7845 0.714747 19.7845C0.816173 19.7845 0.917599 19.7631 1.01331 19.7188L19.5843 11.1476C19.8386 11.0304 20 10.7776 20 10.499C20 10.2205 19.8386 9.9676 19.5857 9.85046Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer__container">
+                <a class="logo footer__logo">
+                    <img src="img/logo.svg" alt="Логотип Блога">
+                </a>
+                <nav class="nav footer__nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item"><a class="nav__link nav__link--current">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Поиск</a></li>
+                    </ul>
+                </nav>
+                <small class="footer__copy">ООО “Организация” 2020. Все права защищены</small>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>

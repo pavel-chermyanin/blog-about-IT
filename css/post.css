@@ -1,0 +1,105 @@
+.post-banner {
+  /* height: 100%; */
+  padding: 40px 0;
+}
+.post-banner__container {
+  padding: 0;
+  max-width: 1400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.post-content__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--grid-gap);
+}
+.post-wrapper {
+  grid-column: 3 span;
+}
+.post {
+  max-width: 800px;
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--grid-gap);
+}
+.post-category {
+  display: inline-block;
+  background-color: #d5d9e7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: var(--accent-color);
+  font-size: 16px;
+  line-height: 21px;
+  margin-right: 20px;
+}
+.post-date {
+  top: var(--grid-gap);
+  right: var(--grid-gap);
+  transition: all 0.3s ease-in-out;
+}
+.post-title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: var(--grid-gap);
+}
+.post p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+  line-height: 23px;
+}
+.post img {
+  display: block;
+  object-position: bottom;
+  border-radius: 20px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: var(--grid-gap);
+}
+.post-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin-bottom: 100px;
+}
+.post-link {
+  position: relative;
+  border-radius: 20px;
+  background-color: #e6e9f3;
+  display: inline-block;
+  color: var(--accent-color);
+  padding: 12px 20px;
+}
+.post-link--prev::after,
+.post-link--next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 10px;
+  width: 6px;
+  transform: translateY(-50%);
+}
+.post-link--prev::after {
+  background-image: url(../img/arrow-prev.svg);
+  left: 15px;
+}
+.post-link--next::after {
+  background-image: url(../img/arrow-next.svg);
+  right: 15px;
+}
+.post-link--prev {
+  padding-left: 34px;
+}
+.post-link--next {
+  padding-right: 34px;
+}

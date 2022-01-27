@@ -45,6 +45,8 @@ img {
   --grid-gap: 40px;
 }
 body {
+  font-size: 18px;
+  line-height: 23px;
   overflow-anchor: none;
   margin: 0;
   font-family: "Futura PT", serif;
@@ -103,6 +105,11 @@ body {
   position: relative;
   font-size: 18px;
   color: var(--dark-color);
+  transition: all .2s ease-in-out;
+}
+.nav__link:hover {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 .nav__link--current {
   color: var(--accent-color);
@@ -156,7 +163,7 @@ body {
   height: 100%;
   background-color: #fff;
   border-radius: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   /* overflow: hidden; */
 }
 .blog-post__date {
@@ -320,6 +327,9 @@ body {
   align-items: center;
   margin-bottom: 100px;
 }
+.pagination__item{
+  transition: all .3s ease-in-out;
+}
 .pagination__item:not(:last-child) {
   margin-right: 20px;
 }
@@ -425,7 +435,20 @@ body {
   color: #fff;
   border-radius: 20px;
   font-size: 18px;
+  transition: all .2s ease-in-out;
 }
+.sub-form__btn svg path{
+  transition: all .2s ease-in-out;
+  
+}
+.sub-form__btn:hover{
+  background-color: #fff;
+  color: var(--accent-color);
+  box-shadow: 0px 1px 22px 5px rgb(0, 0, 0, .2);
+} 
+.sub-form__btn:hover svg path{
+  fill: var(--accent-color);
+} 
 .sub-form__btn span {
   margin-right: 10px;
 }
@@ -478,5 +501,8 @@ body {
   color: var(--accent-color);
 } 
 .blog-post.popular-post__article:hover .blog-post__title{
+  color: var(--accent-color);
+}
+.pagination__item:hover .pagination__link{
   color: var(--accent-color);
 } 
